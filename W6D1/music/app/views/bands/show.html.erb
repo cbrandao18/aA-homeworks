@@ -1,0 +1,21 @@
+<p>Band Name: <%= @band.name %></p>
+
+
+
+<ul>
+    <% if @band.albums.length > 0  %>
+    <% @band.albums.each do |album| %>
+    <li>
+        <a href="<%= album_url(album.id) %>"><%= album.title %></a>
+    </li>
+    <% end %>
+    <% end %>
+</ul>
+
+<form action="<%= band_url(@band.id) %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete this band">
+</form>
+
+<a href="<%= new_band_album_url(@band.id) %>">Add an album for this band</a>
+<a href="<%= bands_url %>">Go back to all bands</a>

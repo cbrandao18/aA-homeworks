@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab&display=swap');
+ h1 {
+    font-family: 'Roboto Mono', monospace;
+ }
+
+  h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+ }
+
+ p, label, a, input{
+   margin: 5px;
+   padding: 0px;
+   font-family: 'Roboto Slab', serif;
+ }
+ 
+ a {
+   background-color: lightblue;
+   border-radius: 5px;
+   color: black;
+   padding: 2px;
+ }
+
+ div p {
+     margin: 5px;
+ }
+
+ div a {
+     margin: 5px;
+ }
